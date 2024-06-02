@@ -18,32 +18,41 @@
   {%  block body %}
 
   <section style="background-color:rgb(236, 236, 6);">
-    <div class="col-md-8">
-        <h1>Welcome to EdTech!</h1>
-        <h3>We're thrilled to have you here <br>Explore our resources and enjoy your visit</h3>
-    </div>
-    <div class="col-md-4">
-      <!-- <img src="{% static 'img/projects/remodeling-1.jpg'%}" alt=""> -->
+    <div class="container">
+      <div class="row"> 
+        <div class="col-md-8">
+            <h1>Welcome to EdTech!</h1>
+            <h3>We're thrilled to have you here <br>Explore our resources and enjoy your visit</h3>
+        </div>
+        <div class="col-md-4">
+          <!-- <img src="{% static 'img/projects/remodeling-1.jpg'%}" alt=""> -->
 
-      <!-- <img src="{% static 'Images/download.jpeg'%}" alt=""> -->
-      <img src="../static/Images/download.jpeg" alt="">
-      <!-- <img src="download.jpeg" alt=""> -->
+          <!-- <img src="{% static 'Images/download.jpeg'%}" alt=""> -->
+          <img src="../static/Images/download.jpeg" alt="">
+          <!-- <img src="download.jpeg" alt=""> -->
+        </div>
+      </div>
     </div>
+
+
   </section>
   <section style="background-color:lightblue;">
-    <div class="col-md-4">
+    <div class="container">
+       <div class="row"> 
+        <div class="col-md-4">
 
-      <!-- <img src="{% static 'Images/avatar.jpeg'%}" alt=""> -->
-      <img src="../static/Images/download (1).jpeg" alt="">
+            <!-- <img src="{% static 'Images/avatar.jpeg'%}" alt=""> -->
+            <img src="../static/Images/download (1).jpeg" alt="">
 
-      <!-- <img src="avatar.jpeg" alt=""> -->
+            <!-- <img src="avatar.jpeg" alt=""> -->
+          </div>
+          <div class="col-md-8">
+              <h3>Hi, I am Pendo!</h3>
+              <p>I will be your guide <br>I'm here to help you <br> navigate and enjoy our content. <br>Let's explore together</p>
+              <button>Explore</button>
+        </div>
+      </div>
     </div>
-    <div class="col-md-8">
-        <h3>Hi, I am Pendo!</h3>
-        <p>I will be your guide <br>I'm here to help you <br> navigate and enjoy our content. <br>Let's explore together</p>
-        <button>Explore</button>
-    </div>
-    
   </section>
 
   {% endblock %}
