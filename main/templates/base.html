@@ -35,14 +35,14 @@
                         </li>
     
                         <li class="nav-item">
-                            <a class="nav-link nav-tabs nav-tabs with drop down:hover" href='/'>ABOUT US</a>
+                            <a class="nav-link nav-tabs nav-tabs with drop down:hover" href='{% url 'home' %}'>ABOUT US</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link nav-tabs nav-tabs with drop down" href='/'>CAREERS</a>
+                            <a class="nav-link nav-tabs nav-tabs with drop down" href='{% url 'home' %}'>CAREERS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-tabs nav-tabs with drop down" href='/'>CONTACT US</a>
+                            <a class="nav-link nav-tabs nav-tabs with drop down" href='{% url 'home' %}'>CONTACT US</a>
                         </li>
     
     
@@ -60,37 +60,33 @@
     <!-- ======= Footer ======= -->
 
     <section class="row bg-secondary text-white text-center">
-		
-        <div class="col-md-4">
-            <h3>CONTACT US</h3>
-            <!-- <p>Email us at:</p> -->
-            <h4>Email : info@co.ke</h4>
-            <h4> Tell : +254 777 543 225</h4>
-            <!-- <p>sales@gabrielltd.com</p>
-            <p>gabriel rentals.com</p> -->
-            <h4>P.O.Box 1575 Nairobi, 08540</h4>
-            <br> 
-            <a href="https://twitter.com/yourpage">
-            <i class="fab fa-twitter" style="color: blue;font-size: 40px;"></i></a>
-            <a href="https://facebook.com/yourpage">
-            <i class="fab fa-facebook-square" style="color: blue; font-size: 40px"></i></a>
-        </div>
+		<div class="container row">
+            <div class="col-md-4">
+                <h5>CONTACT US</h5>
+                <!-- <p>Email us at:</p> -->
+                <i><h5>Email : info@EduSign.co.ke</h5></i>
+                <h5> Tell : +254 742 40 88 83</h5>
+            
+                <h4>P.O.Box *** Nairobi, 08540</h4>
+                <br> 
+                <a href="https://twitter.com/">
+                <i class="fab fa-twitter" style="color: blue;font-size: 40px;"></i></a>
+                <a href="https://facebook.com/">
+                <i class="fab fa-facebook-square" style="color: blue; font-size: 40px"></i></a>
+            </div>
 
-        <div class="col-md-4">
-            <h3>SERVICE HOURS</h3>
-            <h4>Monday - Friday: 08:00AM - 05:00PM</h4>
-            <h4>Saturday: 08:00AM - 01:00PM</h4>
-            <h4>Sunday: Closed</h4>
-            <p> © copyright 2020</p>
-        </div>
+            <div class="col-md-4">
+                <h3>EDUSIGN</h3>
+                <p> © copyright 2024</p>
+            </div>
 
-        <div class="col-md-4" >
-            <a href="/" style="color: white;"> <h3>TERMS AND CONDITIONS</h3></a>
-            <a href="/" style="color: white;"> <h4>privacy policy</h4></a>
-            <a href="/careers" style="color: white;"> <h4>careers</h4></a>
-            <a href="/contact us" style="color: white;"> <h4>contact us</h4></a>
+            <div class="col-md-4" >
+                <a href="{% url 'home' %}" style="color: white;"> <h5>TERMS AND CONDITIONS</h5></a>
+                <a href="{% url 'home' %}" style="color: white;"> <h5>privacy policy</h5></a>
+                <a href="{% url 'home' %}" style="color: white;"> <h5>careers</h5></a>
+                <a href="{% url 'home' %}" style="color: white;"> <h5>contact us</h5></a>
+            </div>
         </div>
-
     </section>
 
 
