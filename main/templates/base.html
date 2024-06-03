@@ -3,18 +3,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Edtech</title>
-    <!-- {% load static %} -->
-	<!-- <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EduSign</title>
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
 	<script type="text/javascript"src="{% static 'js/mugi.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> 
     <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
 </head>
 <body>
+
+    <!-- ======= Header ======= -->
+
+    <section class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+            <!-- Brand -->
+                <a class="navbar-brand" href=''>EduSign </a>
+    
+                <!-- Toggler/collapsibe Button SHOWS IN SMALLSCREENS-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-tabs " href="{% url 'home' %}">HOME</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link nav-tabs nav-tabs with drop down:hover" href='/'>ABOUT US</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link nav-tabs nav-tabs with drop down" href='/'>CAREERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-tabs nav-tabs with drop down" href='/'>CONTACT US</a>
+                        </li>
+    
+    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- End Header -->
     
         {% block body %}
         {% endblock %}
+
+    <!-- ======= Footer ======= -->
+
+    <section class="row bg-secondary text-white text-center">
+		
+        <div class="col-md-4">
+            <h3>CONTACT US</h3>
+            <!-- <p>Email us at:</p> -->
+            <h4>Email : info@co.ke</h4>
+            <h4> Tell : +254 777 543 225</h4>
+            <!-- <p>sales@gabrielltd.com</p>
+            <p>gabriel rentals.com</p> -->
+            <h4>P.O.Box 1575 Nairobi, 08540</h4>
+            <a href="https://twitter.com/yourpage">
+            <i class="fab fa-twitter" style="color: blue;font-size: 40px;"></i></a>
+            <a href="https://facebook.com/yourpage">
+            <i class="fab fa-facebook-square" style="color: blue; font-size: 40px"></i></a>
+        </div>
+
+        <div class="col-md-4">
+            <h3>SERVICE HOURS</h3>
+            <h4>Monday - Friday: 08:00AM - 05:00PM</h4>
+            <h4>Saturday: 08:00AM - 01:00PM</h4>
+            <h4>Sunday: Closed</h4>
+            <p> © copyright 2020</p>
+        </div>
+
+        <div class="col-md-4" >
+            <a href="/" style="color: white;"> <h3>TERMS AND CONDITIONS</h3></a>
+            <a href="/" style="color: white;"> <h4>privacy policy</h4></a>
+            <a href="/careers" style="color: white;"> <h4>careers</h4></a>
+            <a href="/contact us" style="color: white;"> <h4>contact us</h4></a>
+        </div>
+
+    </section>
+
+
     
 </body>
 </html>

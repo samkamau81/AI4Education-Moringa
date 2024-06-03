@@ -1,59 +1,58 @@
 
 {% extends 'base.html' %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EdTech</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <!-- {% load static %} -->
-</head>
-<body>
- 
-    {% block body %}
+{% load static %}                
+    
+{% block body %}
 
-    {% include 'Navbar.html' %} 
 
-    <section style="background-color:rgb(236, 236, 6);">
-        <div class="container">
+    <section style="background-color: rgb(239, 239, 160);">
+         <div class="container"> 
             <div class="row"> 
-                <div class="col-md-8">
-                    <h1>Welcome to EdTech!</h1>
-                    <h3>We're thrilled to have you here <br>Explore our resources and enjoy your visit</h3>
+                <div class="col-md-6">
+                    <h1>Welcome to EduSign!</h1>
+                    <h3> Sign Language for Inclusive Learning</h3>
+                    <!-- <h3>We're thrilled to have you here <br>Explore our resources and enjoy your visit</h3> -->
+                    <br> 
+                    <p>EduSign is a groundbreaking initiative dedicated to creating a more inclusive world for 
+                        the deaf and hard-of-hearing community. We use advanced video processing and machine learning 
+                        algorithms to translate spoken language and captions into sign language, 
+                        ensuring that no one is left out of the conversation.</p>
                 </div>
-                <div class="col-md-4">
-                    <!-- <img src="{% static 'img/projects/remodeling-1.jpg'%}" alt=""> -->
-
-                    <!-- <img src="{% static 'Images/download.jpeg'%}" alt=""> -->
-                    <img src="{% static 'Images/download.jpeg' %}"> alt="">
-                    <!-- <img src="download.jpeg" alt=""> -->
+                <div class="col-md-6">
+                    
+                    <img src="{% static 'Images/download.jpeg' %}" alt="">
+                    
+                   
                 </div>
             </div>
-        </div>
-
+         </div>
     </section>
-    <section style="background-color:lightblue;">
-        <div class="container">
-            <div class="row"> 
-                <div class="col-md-4">
 
-                    <!-- <img src="{% static 'Images/avatar.jpeg'%}" alt=""> -->
-                    <img src="{% static 'Images/download (1).jpeg' %}"> alt="">
-                    
-                    <!-- <img src="avatar.jpeg" alt=""> -->
-                </div>
-                <div class="col-md-8">
-                    <h3>Hi, I am Pendo!</h3>
+    <section style="background-color:lightblue;">
+        <div class="container"> 
+            <div class="row" style="background-color:lightblue;"> 
+                <div class="col-md-6">
+
+                    <!-- We can replace this with a video giff -->
+
+                    <img src="{% static 'Images/download (1).jpeg' %}" alt="">
+
+                    <h3>Hi, I am Pendo!</h3> 
                     <p>I will be your guide <br>I'm here to help you <br> navigate and enjoy our content. <br>Let's explore together</p>
+                    
+                </div>
+                <div class="col-md-6">
+                  
+                    <h3>Here is how it works</h3>
+                    <p>Video Processing: Our system analyzes video content, identifying spoken language and corresponding captions.
+                        Machine Learning: Advanced algorithms translate this information into accurate sign language.
+                        Sign Language Output: The translated sign language is then displayed, ensuring that deaf and hard-of-hearing individuals can fully understand the content.
+                        </p>
                     <button class="btn btn-primary">Explore</button>
                 </div>
             </div>
-        </div>
+         </div> 
     </section>
 
-    {% include 'footer.html' %}
     {% endblock %}
-</body>
 
-</html>
